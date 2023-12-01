@@ -1,17 +1,18 @@
-# Create Secret Manager from env
+# Env2SecretManager
 
-This projet helps you to import your secrets from .env file to AWS.
+Este projeto ajuda você a importar um arquivo .env para um secret manager na AWS.
 
-# Run
+# Executar projeto
 
-- Upload your env file to root folder
-- Configure your aws credentials in `index.js`
-- Configure your secret name in `index.js`
-- Run `npm start` to import secrets
+- Garregue o seu arquivo .env para dentro da pasta raiz do projeto
+- Configure as credenciais da AWS no arquivo `index.js`
+- Configure o seu secret manager no arquivo `index.js`
+- Execute `npm start` para importar as secrets
 
-# Using secret in your project
+# Como usar um secret manager no seu projeto
 
-To use AWS Secret Manager in your project you can use a custom Action to gererate your env and build your docker image with your secrets
+Para usar o AWS Secret Manager em seu projeto, você pode usar uma ação personalizada para gerar seu ambiente e construir sua imagem docker com seus segredos.
+
 
 ```
 - name: Store ENV file from AWS SecretsManager
